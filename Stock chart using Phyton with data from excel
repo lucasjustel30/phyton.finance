@@ -1,0 +1,18 @@
+
+#How to make a stock chart using Phyton with data from excel
+#Dowload historical prices from internet (you can use yahoo finance) and save in format xlsx 
+
+#Import pandas and matplotlib libraries
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#Use the format as follows to reach excel:    pd.read_excel(r"way_to_reach_excel")
+
+x = pd.read_excel(r"C:\Users\DELL\Desktop\petr.xlsx")
+
+#Plot the variables with matplotlib as follows
+
+plt.plot(x["price"])
+
+plt.show()
