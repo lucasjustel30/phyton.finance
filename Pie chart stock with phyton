@@ -1,0 +1,20 @@
+
+
+#1rst. import the math libraries
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Create a variable and use pandas to extract data as follows. Pay attention if your excel document is save in the correct format (.xlsx)
+#Use the following format to save   x = pd.read_excel(r"WhereItsSaved.xlsx")
+
+x = pd.read_excel(r"C:\Users\DELL\Desktop\portfolio2.xlsx")
+
+#Create the pie chart using the librarie matplotlib.pyplot
+#Title of 1rst column is "stock" and title os 2nd column is "price"
+#Use the following format to create the pie chart with percentages:   plt.pie( x[] , labels = x[] , autopct="%1.0f%%")
+
+plt.pie(x["price"], labels= x["stock"], autopct="%1.0f%%")
+
+plt.show()
